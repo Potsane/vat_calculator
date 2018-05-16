@@ -10,11 +10,12 @@
 		11601073A3FCD7ABA8A72B94 /* Pods_Vat_Indicator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F488325A76093EA71A6E06C /* Pods_Vat_Indicator.framework */; };
 		C746355FA1738FDD53AA51FF /* Pods_Vat_IndicatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6E45F546CED6195F7968A8 /* Pods_Vat_IndicatorTests.framework */; };
 		ED320AFB20A9ABEA004916C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED320AFA20A9ABEA004916C7 /* AppDelegate.swift */; };
-		ED320AFD20A9ABEA004916C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED320AFC20A9ABEA004916C7 /* ViewController.swift */; };
+		ED320AFD20A9ABEA004916C7 /* DemoScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED320AFC20A9ABEA004916C7 /* DemoScreenViewController.swift */; };
 		ED320B0020A9ABEA004916C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED320AFE20A9ABEA004916C7 /* Main.storyboard */; };
 		ED320B0220A9ABEA004916C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED320B0120A9ABEA004916C7 /* Assets.xcassets */; };
 		ED320B0520A9ABEA004916C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED320B0320A9ABEA004916C7 /* LaunchScreen.storyboard */; };
 		ED320B1020A9ABEA004916C7 /* Vat_IndicatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED320B0F20A9ABEA004916C7 /* Vat_IndicatorTests.swift */; };
+		ED351C3A20AC06270078AF2E /* OnBoardingViewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED351C3920AC06270078AF2E /* OnBoardingViewClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 		C8ED9711B06FDA8EB4E0FB05 /* Pods-Vat Indicator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vat Indicator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vat Indicator/Pods-Vat Indicator.debug.xcconfig"; sourceTree = "<group>"; };
 		ED320AF720A9ABEA004916C7 /* Vat Indicator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vat Indicator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED320AFA20A9ABEA004916C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ED320AFC20A9ABEA004916C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ED320AFC20A9ABEA004916C7 /* DemoScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoScreenViewController.swift; sourceTree = "<group>"; };
 		ED320AFF20A9ABEA004916C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED320B0120A9ABEA004916C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED320B0420A9ABEA004916C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -44,6 +45,7 @@
 		ED320B0B20A9ABEA004916C7 /* Vat IndicatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vat IndicatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED320B0F20A9ABEA004916C7 /* Vat_IndicatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vat_IndicatorTests.swift; sourceTree = "<group>"; };
 		ED320B1120A9ABEA004916C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED351C3920AC06270078AF2E /* OnBoardingViewClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,11 +115,12 @@
 				ED320B1B20A9AC5B004916C7 /* model */,
 				ED320B1A20A9AC49004916C7 /* controller */,
 				ED320AFA20A9ABEA004916C7 /* AppDelegate.swift */,
-				ED320AFC20A9ABEA004916C7 /* ViewController.swift */,
+				ED320AFC20A9ABEA004916C7 /* DemoScreenViewController.swift */,
 				ED320AFE20A9ABEA004916C7 /* Main.storyboard */,
 				ED320B0120A9ABEA004916C7 /* Assets.xcassets */,
 				ED320B0320A9ABEA004916C7 /* LaunchScreen.storyboard */,
 				ED320B0620A9ABEA004916C7 /* Info.plist */,
+				ED351C3920AC06270078AF2E /* OnBoardingViewClass.swift */,
 			);
 			path = "Vat Indicator";
 			sourceTree = "<group>";
@@ -315,8 +318,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED320AFD20A9ABEA004916C7 /* ViewController.swift in Sources */,
+				ED320AFD20A9ABEA004916C7 /* DemoScreenViewController.swift in Sources */,
 				ED320AFB20A9ABEA004916C7 /* AppDelegate.swift in Sources */,
+				ED351C3A20AC06270078AF2E /* OnBoardingViewClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

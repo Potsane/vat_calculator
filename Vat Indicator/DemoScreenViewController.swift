@@ -13,15 +13,49 @@ class DemoScreenViewController: UIViewController {
 
     //Outlets
     @IBOutlet weak var onboardingObject: OnBoardingViewClass!
+    @IBOutlet weak var getStartedButton: UIButton!
+    
+    @IBAction func gotStarted(_ sender: Any) {
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         onboardingObject.dataSource = self
+        onboardingObject.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+}
+
+extension DemoScreenViewController : PaperOnboardingDelegate{
+    
+    
+    func onboardingConfigurationItem(_: OnboardingContentViewItem, index _: Int) {
+        
+    }
+    
+    func onboardingWillTransitonToLeaving(_ index: Int) {
+        if(index == 1){
+            if(self.getStartedButton.alpha == 1){
+                UIView.animate(withDuration: 0.4, animations: {
+                    self.getStartedButton.alpha = 0
+                })
+            }
+        }
+    }
+    
+    func onboardingDidTransitonToIndex(_ index: Int) {
+        if(index == 2){
+            UIView.animate(withDuration: 0.4, animations: {
+                self.getStartedButton.alpha = 1
+            })
+        }
+    }
+    
+    
     
 }
 

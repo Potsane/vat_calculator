@@ -16,6 +16,7 @@
 		ED320B0520A9ABEA004916C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED320B0320A9ABEA004916C7 /* LaunchScreen.storyboard */; };
 		ED320B1020A9ABEA004916C7 /* Vat_IndicatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED320B0F20A9ABEA004916C7 /* Vat_IndicatorTests.swift */; };
 		ED351C3A20AC06270078AF2E /* OnBoardingViewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED351C3920AC06270078AF2E /* OnBoardingViewClass.swift */; };
+		ED351C3C20AC59450078AF2E /* VatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED351C3B20AC59450078AF2E /* VatListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		ED320B0F20A9ABEA004916C7 /* Vat_IndicatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vat_IndicatorTests.swift; sourceTree = "<group>"; };
 		ED320B1120A9ABEA004916C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED351C3920AC06270078AF2E /* OnBoardingViewClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewClass.swift; sourceTree = "<group>"; };
+		ED351C3B20AC59450078AF2E /* VatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VatListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				ED320B1B20A9AC5B004916C7 /* model */,
 				ED320B1A20A9AC49004916C7 /* controller */,
 				ED320AFA20A9ABEA004916C7 /* AppDelegate.swift */,
+				ED351C3B20AC59450078AF2E /* VatListViewController.swift */,
 				ED320AFC20A9ABEA004916C7 /* DemoScreenViewController.swift */,
 				ED320AFE20A9ABEA004916C7 /* Main.storyboard */,
 				ED320B0120A9ABEA004916C7 /* Assets.xcassets */,
@@ -318,6 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED351C3C20AC59450078AF2E /* VatListViewController.swift in Sources */,
 				ED320AFD20A9ABEA004916C7 /* DemoScreenViewController.swift in Sources */,
 				ED320AFB20A9ABEA004916C7 /* AppDelegate.swift in Sources */,
 				ED351C3A20AC06270078AF2E /* OnBoardingViewClass.swift in Sources */,

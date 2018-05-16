@@ -1,0 +1,6 @@
+framework module Pods_Vat_IndicatorTests {
+  umbrella header "Pods-Vat IndicatorTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

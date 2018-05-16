@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11601073A3FCD7ABA8A72B94 /* Pods_Vat_Indicator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F488325A76093EA71A6E06C /* Pods_Vat_Indicator.framework */; };
+		C746355FA1738FDD53AA51FF /* Pods_Vat_IndicatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6E45F546CED6195F7968A8 /* Pods_Vat_IndicatorTests.framework */; };
 		ED320AFB20A9ABEA004916C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED320AFA20A9ABEA004916C7 /* AppDelegate.swift */; };
 		ED320AFD20A9ABEA004916C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED320AFC20A9ABEA004916C7 /* ViewController.swift */; };
 		ED320B0020A9ABEA004916C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED320AFE20A9ABEA004916C7 /* Main.storyboard */; };
@@ -26,6 +28,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04751332679E77D30C819896 /* Pods-Vat IndicatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vat IndicatorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vat IndicatorTests/Pods-Vat IndicatorTests.release.xcconfig"; sourceTree = "<group>"; };
+		067D71D9D8933549CE980028 /* Pods-Vat IndicatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vat IndicatorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vat IndicatorTests/Pods-Vat IndicatorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3C6E45F546CED6195F7968A8 /* Pods_Vat_IndicatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vat_IndicatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F488325A76093EA71A6E06C /* Pods_Vat_Indicator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vat_Indicator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78F4E4E9642FBAE68373C3AB /* Pods-Vat Indicator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vat Indicator.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vat Indicator/Pods-Vat Indicator.release.xcconfig"; sourceTree = "<group>"; };
+		C8ED9711B06FDA8EB4E0FB05 /* Pods-Vat Indicator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vat Indicator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vat Indicator/Pods-Vat Indicator.debug.xcconfig"; sourceTree = "<group>"; };
 		ED320AF720A9ABEA004916C7 /* Vat Indicator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vat Indicator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED320AFA20A9ABEA004916C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED320AFC20A9ABEA004916C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11601073A3FCD7ABA8A72B94 /* Pods_Vat_Indicator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +59,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C746355FA1738FDD53AA51FF /* Pods_Vat_IndicatorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39B6619554D8D4C305E72BE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F488325A76093EA71A6E06C /* Pods_Vat_Indicator.framework */,
+				3C6E45F546CED6195F7968A8 /* Pods_Vat_IndicatorTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		61B3282BE73590740D1F7E94 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8ED9711B06FDA8EB4E0FB05 /* Pods-Vat Indicator.debug.xcconfig */,
+				78F4E4E9642FBAE68373C3AB /* Pods-Vat Indicator.release.xcconfig */,
+				067D71D9D8933549CE980028 /* Pods-Vat IndicatorTests.debug.xcconfig */,
+				04751332679E77D30C819896 /* Pods-Vat IndicatorTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		ED320AEE20A9ABEA004916C7 = {
 			isa = PBXGroup;
 			children = (
 				ED320AF920A9ABEA004916C7 /* Vat Indicator */,
 				ED320B0E20A9ABEA004916C7 /* Vat IndicatorTests */,
 				ED320AF820A9ABEA004916C7 /* Products */,
+				61B3282BE73590740D1F7E94 /* Pods */,
+				39B6619554D8D4C305E72BE1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,9 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED320B1420A9ABEA004916C7 /* Build configuration list for PBXNativeTarget "Vat Indicator" */;
 			buildPhases = (
+				3F817CEB8272B65EA453C974 /* [CP] Check Pods Manifest.lock */,
 				ED320AF320A9ABEA004916C7 /* Sources */,
 				ED320AF420A9ABEA004916C7 /* Frameworks */,
 				ED320AF520A9ABEA004916C7 /* Resources */,
+				AE3D72848F19BEA92D662807 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -144,6 +178,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED320B1720A9ABEA004916C7 /* Build configuration list for PBXNativeTarget "Vat IndicatorTests" */;
 			buildPhases = (
+				CE963A48851CB3738921A2A8 /* [CP] Check Pods Manifest.lock */,
 				ED320B0720A9ABEA004916C7 /* Sources */,
 				ED320B0820A9ABEA004916C7 /* Frameworks */,
 				ED320B0920A9ABEA004916C7 /* Resources */,
@@ -217,6 +252,63 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F817CEB8272B65EA453C974 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Vat Indicator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE3D72848F19BEA92D662807 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Vat Indicator/Pods-Vat Indicator-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/paper-onboarding/paper_onboarding.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/paper_onboarding.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vat Indicator/Pods-Vat Indicator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE963A48851CB3738921A2A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Vat IndicatorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ED320AF320A9ABEA004916C7 /* Sources */ = {
@@ -375,6 +467,7 @@
 		};
 		ED320B1520A9ABEA004916C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8ED9711B06FDA8EB4E0FB05 /* Pods-Vat Indicator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -390,6 +483,7 @@
 		};
 		ED320B1620A9ABEA004916C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78F4E4E9642FBAE68373C3AB /* Pods-Vat Indicator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -405,6 +499,7 @@
 		};
 		ED320B1820A9ABEA004916C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 067D71D9D8933549CE980028 /* Pods-Vat IndicatorTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -422,6 +517,7 @@
 		};
 		ED320B1920A9ABEA004916C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04751332679E77D30C819896 /* Pods-Vat IndicatorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

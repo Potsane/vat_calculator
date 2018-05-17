@@ -8,11 +8,11 @@ target 'Vat Indicator' do
 pod 'paper-onboarding'
 
   # Pods for Vat Indicator
-
+pod 'SwiftyJSON'
+pod 'Alamofire'
   target 'Vat IndicatorTests' do
     inherit! :search_paths
     # Pods for testing
   end
 
 end
-

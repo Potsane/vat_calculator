@@ -17,6 +17,7 @@
 		ED320B1020A9ABEA004916C7 /* Vat_IndicatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED320B0F20A9ABEA004916C7 /* Vat_IndicatorTests.swift */; };
 		ED351C3A20AC06270078AF2E /* OnBoardingViewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED351C3920AC06270078AF2E /* OnBoardingViewClass.swift */; };
 		ED351C3C20AC59450078AF2E /* VatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED351C3B20AC59450078AF2E /* VatListViewController.swift */; };
+		EDF5AC6B20AD5BC9008C5F16 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF5AC6A20AD5BC9008C5F16 /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		ED320B1120A9ABEA004916C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED351C3920AC06270078AF2E /* OnBoardingViewClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewClass.swift; sourceTree = "<group>"; };
 		ED351C3B20AC59450078AF2E /* VatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VatListViewController.swift; sourceTree = "<group>"; };
+		EDF5AC6A20AD5BC9008C5F16 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				ED320B0320A9ABEA004916C7 /* LaunchScreen.storyboard */,
 				ED320B0620A9ABEA004916C7 /* Info.plist */,
 				ED351C3920AC06270078AF2E /* OnBoardingViewClass.swift */,
+				EDF5AC6A20AD5BC9008C5F16 /* CollectionViewCell.swift */,
 			);
 			path = "Vat Indicator";
 			sourceTree = "<group>";
@@ -285,10 +288,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Vat Indicator/Pods-Vat Indicator-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/paper-onboarding/paper_onboarding.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/paper_onboarding.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDF5AC6B20AD5BC9008C5F16 /* CollectionViewCell.swift in Sources */,
 				ED351C3C20AC59450078AF2E /* VatListViewController.swift in Sources */,
 				ED320AFD20A9ABEA004916C7 /* DemoScreenViewController.swift in Sources */,
 				ED320AFB20A9ABEA004916C7 /* AppDelegate.swift in Sources */,

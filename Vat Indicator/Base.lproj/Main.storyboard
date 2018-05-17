@@ -76,7 +76,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="PyE-HO-b1a">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="PyE-HO-b1a" customClass="CollectionViewCell" customModule="Vat_Indicator" customModuleProvider="target">
                                         <rect key="frame" x="12.5" y="0.0" width="350" height="250"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -103,9 +103,19 @@
                                                 </label>
                                             </subviews>
                                         </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <size key="customSize" width="350" height="250"/>
+                                        <connections>
+                                            <outlet property="locationDescription" destination="3pd-MM-Kiy" id="iDn-bY-kfW"/>
+                                            <outlet property="locationImage" destination="hfq-BQ-5kq" id="Qhk-tD-WiA"/>
+                                            <outlet property="locationName" destination="Ljj-HN-7I7" id="2qH-ic-yoA"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="iK8-mI-Xfg" id="biQ-Ha-Oqo"/>
+                                    <outlet property="delegate" destination="iK8-mI-Xfg" id="jvO-Cc-oiw"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

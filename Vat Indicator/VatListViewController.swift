@@ -50,8 +50,15 @@ class VatListViewController: UIViewController, UICollectionViewDataSource, UICol
     
     func displayVat(vatJSONData : JSON){
        //var vatArray = vatJSONData["rates"].arrayValue
-        for obj in vatJSONData["rates"] {
-            print(obj)
+       /* for obj in vatJSONData["rates"] {
+           print(obj)
+        }*/
+        
+        let dataJson =  vatJSONData["rates"]
+        
+        for subJson in dataJson.arrayValue{
+            let countryName = subJson["name"].string
+            print(countryName)
         }
         
     }
